@@ -99,19 +99,7 @@ SELECT b.Title, b.Author, m.FirstName, m.LastName, l.DueDate
 FROM Book b
 JOIN Loan l ON b.BookID = l.BookID
 JOIN Member m ON l.MemberID = m.MemberID
-WHERE l.ReturnDate IS NULL AND l.DueDate < GETDATE();
-
-
-
-🔍 Validation with My CV
- 
-    ﻿CV Highlight,Project Validation
-Reduced data errors by 11% (Sakon),SQL constraints (FOREIGN KEY, NOT NULL) ensure data integrity.
-Optimized ETL by 20% (Sakon),Indexing (CREATE INDEX) and automated scripts improve performance.
-Power BI Dashboards (Sakon),SQL queries here generate report-ready data (e.g., GROUP BY for KPIs).
-MBA in Supply Chain Management,Process optimization (e.g., loan tracking) aligns with supply chain logic.
-MSc. Data Analytics (BSBI),CAP Theorem discussion and normalization reflect academic rigor.
-  
+WHERE l.ReturnDate IS NULL AND l.DueDate < GETDATE(); 
 
 🌟 Future Enhancements
 
